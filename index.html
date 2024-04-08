@@ -18,8 +18,8 @@
         body {
             font-family: 'Montserrat', sans-serif;
             font-weight: 200;
-            color: white;
-            background: grey;
+            color: var(--tg-theme-text-color);
+            background: var(--tg-theme-hint-color);
         }
 
         #main {
@@ -53,12 +53,12 @@
             font-weight: 500;
             cursor: pointer;
             transition: all 500ms ease;
-            color: yellow;
-            background: yellow;
+            color: var(--tg-theme-bg-color);
+            background: var(--tg-theme-text-color);
         }
 
         button:hover {
-            background: green;
+            background: var(--tg-theme-secondary-bg-color);
         }
 
         #form {
@@ -81,16 +81,16 @@
     <div id="main">
         <h1>Онлайн база данных</h1>
         <img src="https://google.com">
-        <p>Lorem</p>>
-        <button id="buy">Купить</button>>
-    </div>>
+        <p>Lorem</p>
+        <button id="buy">Купить</button>
+    </div>
      <div id="form">
        <input type="text" placeholder="Имя" id="user_name">
         <input type="text" placeholder="Имя" id="user_email">
          <input type="text" placeholder="телефон" id="user_phone">
          <div id="error"></div>
-        <button id="order">Оформить</button>>
-    </div>>
+        <button id="order">Оформить</button>
+    </div>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tg = window.Telegram.WebApp;
